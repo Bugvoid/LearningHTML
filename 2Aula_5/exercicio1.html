@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio 1</title>
+        <style>
+            body{
+                color:  #CCCCCC;
+                font-family: arial;
+            }
+            table{
+                background-color:#CCCCCC;    
+            }
+            .titulo{
+                font-size: 15px;
+                font-weight: 700;
+                background-color: #000033;
+                width: 100px;
+                padding: 5px;
+                text-align: center;
+            }
+            .dados{
+                font-size: 14px;
+                background-color:#000066;
+                padding: 5px;
+            }
+        </style>
+        <script>
+          var controle = 0;
+          var retorno = '';
+          var tabela = '<table><tr><td class="titulo">Índice</td><td class="titulo">Nome</td></tr>';
+          for(var i=1; retorno != null; i++){
+            retorno = prompt("Digite um nome ");
+            if(retorno != null){
+              controle++;  
+              tabela += '<tr><td class="dados">'+i+'</td><td class="dados">'+retorno+'</td></tr>';
+            }
+          }
+          tabela += "</table>";
+          if(controle != 0){    
+            document.write(tabela);    
+          }
+        </script>
+    </head>
+    <body>
+        <div id="mostraTabela">
+        
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <script>
+    window.onload=function(){
+             document.getElementById("btn").onclick = function(){
+            calcular();
+        }
+        }
+    function calcular(){
+        var p = parseFloat(document.getElementById("p").value);
+        var tp = parseInt(document.getElementById("tp").value)
+        
+        if(tp == 1){
+            document.write("Valor do produto: " + p + "<br> Valor a ser pago:" + (p -((p*10)/100)))
+        }
+         if(tp == 2){
+            document.write("Valor do produto: " + p + "<br> Valor a ser pago:" + (p -((p*5)/100)))
+        }
+         if(tp == 3){
+            document.write("Valor do produto: " + p + "<br> Valor a ser pago:" + (p +((p*10)/100)))
+        }else
+            alert("Erro: tipo de pagamento incorreta");
+    }
+        </script>
+</head>
+
+<body>
+    <form>
+     Preço: <input type="text" id="p"><br>
+        tipo de pag.:<input type="text" id="tp">
+        <input type="button"  value="calcular "id="btn">
+    </form>
+</body>
+</html>

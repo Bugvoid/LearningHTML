@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <title>Meu niver</title>
+    <style>
+        p{
+            color: #eee;
+            
+        }
+        body{
+            font-family: 'Press Start 2P';
+            font-size: 10pt;
+            background-image: url(img/akol.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-left: 500px;
+            margin-top: 100px;
+        }
+        
+        table.cal{
+            color: #005464;
+            border: 3px solid #000;
+            border-radius: 0 0 25px 25px;
+            border-spacing: 0; 
+        }
+        .cal caption{
+            background: #eef0f2;
+            color: #0086f8;
+            border-radius: 25px 25px 0 0;
+            text-transform: uppercase;
+            background-size: 100px;
+            
+        }
+        
+        .cal th, .cal td{
+            margin: 2px;
+            padding-bottom: 2px;
+        }
+        th{
+            text-align: center;
+            background: #eee;
+        }
+        .cal td{
+            width: 55px;
+            height: 55px;
+            vertical-align: middle;
+            text-align: center;
+            
+        }
+        tr:nth-child(odd){
+            background: #0080ff;
+        }
+        tr:nth-child(even){
+            background: #ffffff;
+        }
+        tr:last-child>td:first-child{
+            border-radius: 0 0 0 20px;
+        }
+        tr:last-child>td:last-child{
+            border-radius: 0 0 20px 0;
+        }
+        tr>td:first-child, tr>td:last-child{
+            color: #3b00ff;
+        }
+        td:nth-child(even){
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+        .feriado{
+            background: #f20707;
+        }
+        .old{
+            background: #ccc;
+            color: #535353;
+        }
+        span{
+            text-align: center;
+            color: #f20c5c;
+            font-size: 7pt;
+            display: none;
+            
+        }
+        td:hover>span{
+            display: block;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div ></div>
+    <p>Mês do meu aniversario</p>
+    <table class="cal">
+        <caption>Dezembro 2017</caption>
+        <thead>
+            <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="old">27</td>
+                <td class="old">28</td>
+                <td class="old">29</td>
+                <td class="old">30</td>
+                <td>1</td>
+                <td>2*<span><img src="img/Cake-icon.png"></span></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td >22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td class="feriado">25*<span><img src="img/sinos.png"></td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript">
+        
+            function limpar(){
+                document.getElementById("res").value="";
+            }
+            function preencher(valor){
+                document.getElementById("res").value+=valor;
+            }
+            function calcular(){
+                var resultado=0;
+                resultado=document.getElementById("res").value;
+                document.getElementById("res").value="";
+                document.getElementById("res").value= eval(resultado);
+            }
+            /*function pontecia(){
+                var p1=document.getElementById("res").value;
+                //p1=eval(p1);
+                Math.pow(eval(p1));
+            }*/
+    </script>
+</head>
+<body>
+    <form id="calculadora">
+        <div class="visor">
+            <input type="text" name="res" id="res" value="" class="visor_input" readonly>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao_fun">mrc</button>
+            <button type="button" class="calc_botao_fun">m-</button>
+            <button type="button" class="calc_botao_fun">m+</button>
+            <button type="button" class="calc_botao_op" onclick="preencher('/')">÷</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="preencher(7)">7</button>
+            <button type="button" class="calc_botao" onclick="preencher(8)">8</button>
+            <button type="button" class="calc_botao" onclick="preencher(9)">9</button>
+            <button type="button" class="calc_botao_op" onclick="preencher('*');">x</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="preencher(4)">4</button>
+            <button type="button" class="calc_botao" onclick="preencher(5)">5</button>
+            <button type="button" class="calc_botao" onclick="preencher(6)">6</button>
+            <button type="button" class="calc_botao_op" onclick="preencher('-')">-</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="preencher(1)">1</button>
+            <button type="button" class="calc_botao" onclick="preencher(2)">2</button>
+            <button type="button" class="calc_botao" onclick="preencher(3)">3</button>
+            <button type="button" class="calc_botao_op" onclick="preencher('+')">+</button>
+        </div>
+        <div class="calc_linhas">
+            <button type="button" class="calc_botao" onclick="preencher(0)">0</button>
+            <button type="button" class="calc_botao" onclick="preencher('.')">.</button>
+            <button type="button" class="calc_botao" onclick="limpar()">C</button>
+            <button type="button" class="calc_botao_res" onclick="calcular()">=</button>
+        </div>
+    </form>
+</body>
+</html>

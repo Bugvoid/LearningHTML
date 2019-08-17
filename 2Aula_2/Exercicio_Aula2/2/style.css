@@ -1,0 +1,40 @@
+/* CSS Document */
+body{
+    background: #1689b4;
+}
+p{
+    color: #fff;
+    font-size: 26pt;
+    font-family: 'Press Start 2P', cursive;
+}
+ .topo{ 
+            height: 80px;
+            background: #ff8000;
+            padding: 1px;
+            padding-left: 7px;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -8px;        
+    }
+.yo{
+            background: #fff;
+            width: 400px;
+            text-align: center;
+            border: 10px groove #ff6200;
+            font-family: 'Press Start 2P', cursive;
+            margin-left: 450px;
+
+        }
+        
+        figure>img{
+            width: 95%;
+            padding-top: 10px;
+            height: 300px;
+        }
+        figcaption{
+            padding: 20px;
+        }
+img{
+            
+            
+}

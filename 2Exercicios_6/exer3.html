@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exercício 3</title>
+        <style>
+            #painel,painel2{
+                height: 350px;
+                width: 500px;
+                background-color: #ead42e;
+                border-style: ridge;
+                border-color: black gray;
+            }
+        </style>
+        <script type="text/javascript">
+            window.onload=function(){
+                var obj1 = document.getElementById("aba1");
+                var obj2 = document.getElementById("aba2");
+                var obj3 = document.getElementById("aba3");
+                 var sec = 0;
+                    function getSec(){
+	                   
+                        document.getElementById("painel").innerHTML = setInterval(1+1,1000);
+                    }
+                
+
+                obj1.onclick=function(){
+                    
+                    document.getElementById("painel").innerHTML = setInterval(getSec,1000);
+                    
+                    mudaCor('#ead42e');
+                    
+           
+                    
+                }
+                obj2.onclick=function(){
+                    document.getElementById("painel").innerHTML = clearInterval(getSec);
+                    mudaCor('#91d359');
+                    document.getElementById("painel").innerHTML = "sadsa";
+                }
+                obj3.onclick=function(){
+                    mudaCor('#51cfd4');
+                    corFrase('white')
+                    document.getElementById("painel").innerHTML = "Digite o número da tabuada que deseja calcular:"+"<br>";
+                    
+                }
+            }
+            
+            function mudaCor(cor){
+                document.getElementById("painel").style.backgroundColor = cor;
+                
+            }
+            function corFrase(cor){
+	           document.getElementById("painel").style.color = cor;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <img src="aba1.png" id="aba1"/>
+        <img src="aba2.png" id="aba2"/>
+        <img src="aba3.png" id="aba3"/>
+        <div id="painel" method="get"></div>
+    </body>
+</html>

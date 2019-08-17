@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+    <script>
+        window.onload = function(){
+            var btn = document.getElementById("btn");
+            btn.onclick = function(){
+                var num = parseInt(document.getElementById("num").value);
+                var fat = 1;
+                for(var i =1;i<=num;i++){
+                    fat= fat*i;
+                }
+                document.getElementById("fat").value = fat;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Numero: <input type="text" id="num"><br>
+        Fatorial: <input type="text" id="fat" readonly> <br>
+        <input type="button" value="Calcular" id="btn">
+    </form>
+</body>
+</html>

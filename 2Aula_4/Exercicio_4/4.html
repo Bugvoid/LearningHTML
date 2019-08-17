@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+    <script>
+        window.onload=function(){
+             document.getElementById("btn").onclick = function(){
+            calcular();
+        }
+        }
+        
+        function calcular(){
+            var num = parseFloat(document.getElementById("base").value);
+        var num2 = parseFloat(document.getElementById("alt").value);
+            
+            document.write("<div>A area do retangulo é "+num * num2 +"</div>");
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Base: <input type="text" id="base">
+        Altura: <input type="text" id="alt">
+        <input type="button"  value="calcular "id="btn">
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    background: #00b1ff;
+    font-size: 12pt;
+}
+
+#principal {
+    width: 800px;
+    height: auto;
+    border: thin solid #006666;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#rodape {
+    text-align: center;
+    height: 35px;
+    padding-top: 10px;
+}
+
+#menu {
+    background: #006666;
+    height: 25px;
+    padding: 5px;
+    font-family: vergana;
+    font-size: 11pt;
+}
+
+nav>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    padding: 5px;
+    line-height: 25px;
+}
+
+#cad {
+    text-align: center;
+}
+
+div>p {
+    text-align: justify;
+}
+
+.img_game {
+    text-align: center;
+}
+
+.img_game img {
+    width: 400px;
+}
+
+.caixa {
+    width: 382px;
+    height: 220px;
+    border: 1px solid #006666;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 8px;
+    float: left;
+}
+
+header {
+    height: 220px;
+}

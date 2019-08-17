@@ -1,0 +1,60 @@
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+body{
+    background: #d8b10c;
+    font-size: 12pt;
+   font-family: 'Press Start 2P';
+    
+}
+#principal{
+    width: 800px;
+    height: auto;
+    border: thin solid #000588;
+    margin: 0 auto;
+    background: #eee;
+}
+#rodape{
+    text-align: center;
+    height: 35px;
+    padding-top: 10px;
+    
+}
+#menu{
+    background: #000000;
+    height: 25px;
+    padding: 4px;
+    font-size: 5pt;
+}
+nav a:link, a:visited{
+    color: #004b8d;
+    text-decoration: none;
+}
+a{
+    padding: 5px;
+    line-height: 25px;
+}
+#cad{
+    text-align: center;
+}
+div>p{
+    text-align: justify;
+    
+}
+.img_game{
+    text-align: center;
+    
+}
+.img_game img{
+    text-align: center;
+    width: 400px;
+}
+.caixa{
+    width: 380px;
+    height: 220px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 10px;
+    float: left;
+}

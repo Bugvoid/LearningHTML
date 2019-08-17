@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.ttf">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7/dist/js/bootstrap.js">
+    <title></title>
+    <style>
+        /* TENHO QUE APRENDER MUITO USAR MEDIA
+        
+            FAZER NO BOOTSTRAP(DEUS)
+        */
+        @media screen and (min-width:320px) {
+            .container-fluid2 {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width:780px) {
+            .container-fluid2 {}
+        }
+        
+        @media screen and (max-width:1080px) {
+            .col-md-1 {
+                
+                 margin-left: 1100px;
+            }
+        }
+        /*
+            UTILIZAR O BOOTSTRAP
+        */
+        .container {
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+        
+        .container-fluid {
+            background: #0057fa;
+            float: left;
+            margin-top: -20px;
+            margin-left: 0px;
+            width: 200px;
+            height: 300%;
+            position: fixed;
+        
+            
+        }
+        
+        .container-fluid2 {
+            background: #0057fa;
+            height: 70px;
+        }
+        
+        .col-md-1 {
+            margin-left: 140px;
+            float: left;
+            width: auto;
+            padding-top: 20px;
+            height: 100%;
+        }
+        
+        .col-md-1:hover {
+            background: #c3c3c3;
+        }
+        
+        .col-md-2 {
+            margin-left: 0px;
+            float: left;
+            width: auto;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .glyphicon-home{
+            font-size: 50pt;
+        }
+        .glyphicon-file{
+            font-size: 50pt;
+        }
+        .glyphicon-stats{
+            font-size: 50pt;
+        }
+        .glyphicon-envelope{
+            font-size: 50pt;
+        }
+        
+        a {
+            color: #000;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        a:link{
+            
+        }
+        
+        .coixa {
+            width: 900px;
+            height: auto;
+            background: #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .coixa figure {
+            margin: 0 auto;
+            padding-top: 30px;
+            width: 800px;
+            height: auto;
+        }
+        
+        figcaption {
+            text-align: center;
+        }
+        
+        @font-face {
+            font-family: 'PressStart2P-Regular';
+            src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'PressStart2P-Regular';
+            font-size: 15pt;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid visible-sm visible-xs">
+
+        <div class="col-md-2"><a href="">
+            <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-home"></span>
+        </button>
+            </a></div>
+        <div class="col-md-2"><a href="">
+            <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-file"></span>
+        </button>
+            </a></div>
+        <div class="col-md-2"><a href="">
+            <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-stats"></span>
+        </button>
+            </a></div>
+        <div class="col-md-2"><a href="">
+            <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-envelope"></span>
+        </button>
+            </a></div>
+
+    </div>
+    <div class="container-fluid2 hidden-sm hidden-xs">
+
+        <div class="col-md-1"><a href="">Home</a></div>
+        <div class="col-md-1"><a href="">Pagina1</a></div>
+        <div class="col-md-1"><a href="">Pagina2</a></div>
+        <div class="col-md-1 hidden-md"><a href="">Contato</a></div>
+
+    </div>
+    <div class="container">
+        <div class="coixa">
+            <figure>
+                <img class="img-responsive" src="img/resize-img.jpg">
+                <figcaption>Ima1</figcaption>
+            </figure>
+
+        </div>
+        <div class="coixa">
+            <figure>
+                <img class="img-responsive" src="img/57238.jpg">
+                <figcaption>Ima2</figcaption>
+            </figure>
+
+        </div>
+        <div class="coixa">
+            <figure>
+                <img class="img-responsive" src="img/vale-rochoso-wallpaper-1366x768.jpg">
+                <figcaption>Ima3</figcaption>
+            </figure>
+
+        </div>
+    </div>
+</body>
+
+
+
+</html>

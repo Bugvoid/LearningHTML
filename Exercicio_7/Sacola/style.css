@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    padding: 10px;
+}
+header{
+    margin-left: 250px;
+    color: #ccc;
+    width: 900px;
+    border: solid #000;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+#container{
+    margin: 10px 0px 0px 250px;
+    width: 900px;
+    height: 400px;
+}
+footer{
+    margin: 10px 0px 0px 250px;
+    text-align: center;
+    width: 900px;
+    height: 50px;
+    padding-top: 1px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px 20px 0px 0px;
+        
+}
+.opniao{
+    margin: 50px 0px 0px 250px;
+    width: 900px;
+    padding-left: 10px;
+    text-align: left;
+    padding-top: 30px;
+    border: solid #000;
+    border-radius: 0px 0px 20px 20px;
+    height: 150px;
+}
+.caixa {
+	height: 400px;
+    width: 440px;
+    float: left;
+    border: solid #ccc;
+    box-shadow: 10px 30px 50px #ccc; 
+    border-radius: 0px 20px 20px 0px;
+}
+.caixa2 {
+	height: 400px;
+    width: 440px;
+    float: right;
+    border: solid #ccc;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 10px 30px 50px #ccc;
+}

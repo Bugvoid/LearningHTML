@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+    <script>
+        window.onload=function(){
+             document.getElementById("btn").onclick = function(){
+            calcular();
+        }
+        }
+        function calcular(){
+            var n1 =parseFloat(document.getElementById("n1").value).toFixed(2);
+            var n2 =parseFloat(document.getElementById("n2").value);
+            var n3 =parseFloat(document.getElementById("n3").value);
+            
+            var tot = (n1+n2+n3)/3;
+            
+            if(tot >=6){
+                alert("Aluno com media: " + tot +" : Aprovado");
+            } else if(tot >=3 && tot<6){
+                alert("Aluno com media: " + tot +" : Exame");
+            }else if(tot <3){
+                alert("Aluno com media: " + tot +" : Reprovado");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Nota 1: <input type="text" id="n1"><br>
+        Nota 2: <input type="text" id="n2"><br>
+        Nota 3: <input type="text" id="n3"><br>
+        <input type="button"  value="calcular "id="btn">
+    </form>
+</body>
+</html>

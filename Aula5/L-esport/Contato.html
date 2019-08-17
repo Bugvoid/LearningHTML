@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lu-sportHome</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+        <img src="img/contato.png">
+        </header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="Aula.html">Aula</a> | 
+            <a href="Musicas_para_esporte.html">Musicas</a> | 
+            <a href="Contato.html">Contato</a>
+        </nav>
+        <section>
+            <h2>Entre em contato conosco</h2>
+            <p>Preencha o formulário abaixo:</p>
+            
+            <form name="Form1" method="post" action="">
+                <fieldset>
+                    
+                <legend>Dados pessoais:</legend>
+                    
+                    <label>Codigo YouSport(caso seja matriculado):</label>
+                    <input pattern="^\d{5}-\d{2}$" type="tel" name="cod">
+                    
+                    <br><br><label>*Nome: </label>
+                    <input type="text" name="nome" required>
+                    
+                    <br><br><label>*E-mail</label>
+                    <input type="email" name="email" required>
+                    
+                    <br><br><label>Telefone</label>
+                    <input type="tel" name="telefone" >
+                    
+                    <br><br><label>Genero:</label>
+                    <input type="radio" name="sexo" value="F" id="c1">Feminino
+                    <input type="radio" name="sexo" value="F" id="c1">Masculino
+                    
+                    <br><br><label>Cidade</label>
+                    <input list="cid" name="Cidade">
+                    <datalist id="cid">
+                        <option value="Itaquera"></option>
+                        <option value="São Miguel"></option>
+                        <option value="Itaquacetuba"></option>
+                        <option value="Guarulhos"></option>
+                        <option value="Tatuape"></option>
+                        <option value="Repuplica"></option>
+        
+                    </datalist>
+                    
+            
+                    <br><br><label>O que gosta na academia?</label>
+                    <input type="checkbox" name="port" >Musculação
+                    <input type="checkbox" name="port" >Ginastica
+                    <input type="checkbox" name="port" >Yoga
+                    <input type="checkbox" name="port" >Natação
+                    
+                    <br><br><label>(*)Campos obrigatorios</label>
+                    <input type="hidden" name="ocult">
+                    
+                </fieldset>
+                
+                <br><br><label>Mensagem</label>
+                <textarea cols="50" rows="3" placeholder="Digite sua mensagem"></textarea>
+                <br><br><input type="submit" value="Enviar">
+            
+            
+            </form>
+        </section>
+        
+        <footer>
+            <br><br>
+            <small> &copy;Luan Castro Alves RGM 18036546 </small>
+        </footer>
+    </body>
+</html>

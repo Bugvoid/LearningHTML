@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+    <script>
+        window.onload = function(){
+            var num_s;
+            var tenta =0;
+            var div_msn = document.getElementById("msn");
+            var dic = document.getElementById("dica");
+            
+            num_s = sorte();
+            
+            document.getElementById("btn").onclick = function(){
+                tenta++;
+                var chute_n = parseInt(document.getElementById("chute").value);
+                if(chute_n < num_s){
+                    dic.value = "O numero sorteado é maior";
+                }else if(chute_n > num_s){
+                    dic.value = "O numero sorteado é menor";
+                }else{
+                    div_msn.innerHTML ="<h1>Congratulation!!"+tenta +" tentativas</h1>"+"<h3>F5 para Jogar novamente</h3>"
+                }
+            }
+        }
+        function sorte(){
+            return Math.round(Math.random()*100);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Chute: <input type="text" id="chute"><br>
+        <input type="button" value="Verificar" id="btn"><br>
+        Dica:<input type="text" id="dica" readonly><br>
+    </form>
+    <div id="msn"></div>
+</body>
+</html>

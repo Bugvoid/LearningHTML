@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+        <img src="img/imagem1.png">
+        </header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="Receita.html">Receita</a> | 
+            <a href="Video.html">Video</a> | 
+            <a href="Contato.html">Contato</a>
+        </nav>
+        <section>
+            <h2>Entre em contato conosco</h2>
+            <p>Preencha o formulário abaixo:</p>
+            
+            <form name="Form1" method="post" action="">
+                <fieldset>
+                <legend>Dados pessoais:</legend>
+                    <label>*Nome: </label>
+                    <input type="text" name="nome" required>
+                    
+                    <br><br><label>*E-mail</label>
+                    <input type="email" name="email" required>
+                    
+                    <br><br><label>Telefone</label>
+                    <input type="number" name="telefone" >
+                    
+                    <br><br><label>Genero:</label>
+                    <input type="radio" name="sexo" value="F" id="c1">Feminino
+                    <input type="radio" name="sexo" value="F" id="c1">Masculino
+                    
+                    <br><br><label>Cidade</label>
+                    <input list="cid" name="Cidade">
+                    <datalist id="cid">
+                        <option value="Itaquera"></option>
+                        <option value="São Miguel"></option>
+                        <option value="Itaquacetuba"></option>
+                        <option value="Guarulhos"></option>
+                        <option value="Tatuape"></option>
+                        <option value="Repuplica"></option>
+        
+                    </datalist>
+                    
+                    <br><br><label>Envie um link de comida:</label>
+                    <input type="url" name="site">
+                    
+                    
+                    <br><br><label>(*)Campos obrigatorios</label>
+                    <input type="hidden" name="ocult">
+                    
+                    <br><br><label>O que voce faz:</label>
+                    <select>
+                        <option value="Brna"></option>
+                        <option value="trampo">Trabalho</option>
+                        <option value="estuda">Estudo</option>
+                        <option value="Nope">Nada</option>
+                    </select>
+                    
+                </fieldset>
+                <br><br><label>Escolha a comida</label>
+                <input type="checkbox" name="food" >Pizza
+                <input type="checkbox" name="food" >Pão de queijo
+                <input type="checkbox" name="food" >Bolo
+                <input type="checkbox" name="food" >Yakisoba
+    
+                <br><br><label>Mensagem</label>
+                <textarea cols="50" rows="3" placeholder="Digite sua mensagem"></textarea>
+                <br><br><input type="submit" value="Enviar">
+            
+            
+            </form>
+        </section>
+        
+        <footer>
+            <br><br>
+            <small> &copy;Luan Castro Alves RGM 18036546 </small>
+        </footer>
+    </body>
+</html>

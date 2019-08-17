@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        .caixa {
+            height: 100px;
+            width: 300px;
+            border: solid 5px #000;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+            var elem1;
+            var elem2;
+        window.onload = function(){
+            elem1 = document.getElementById("box1");
+            elem2 = document.getElementById("box2");
+            
+            elem1.onclick = trataEvento1;
+            elem1.ondblclick = trataEvento1;
+            
+            elem2.onmouseover = trataEvento2;
+            elem2.onmousedown = trataEvento2;
+            elem2.onmouseup = trataEvento2;
+            elem2.onmouseout = trataEvento2;
+            elem2.onmousemove = trataEvento2;
+            
+        }
+        function trataEvento1(event){
+            switch(event.type){
+                case "click": elem1.style.backgroundColor="green";break;
+                case "dblclick": elem1.style.backgroundColor="blue";break;
+                   }
+        }
+        function trataEvento2(event){
+            switch(event.type){
+                case "mouseover": elem2.style.backgroundColor="red";break; 
+                case "mousedowm": elem2.style.backgroundColor="white";break;
+                case "mouseout": elem2.style.backgroundColor="yellow";break;
+                case "mouseup": elem2.style.backgroundColor="black";break;
+                case "mousemove": elem2.innerHTML="x=" + event.clientX +","+ "y="+event.clientY;break;
+                   }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="box1" class="caixa"></div>
+    <div id="box2" class="caixa"></div>
+
+
+
+
+</body>
+
+</html>

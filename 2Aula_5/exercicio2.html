@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio 2</title>
+        <script>
+          var coluna = prompt("Informe a quantidade de colunas ");
+          var linha = prompt("Informe a quantidade de linhas");
+          var cor = '';
+          var tabela = '<table>';
+          for(var c=1; c <= coluna; c++){
+              tabela += '<tr>';
+              for(var l=1; l <= linha; l++){
+                if(l%2 == 0){
+                  cor = 'green';
+                } else{
+                  cor = 'yellow';
+                }
+                tabela += '<td style="background-color:'+cor+'">'+c+','+l+'</td>';
+              }
+              tabela += '</tr>';
+          }
+          tabela += "</table>";
+          document.write(tabela);    
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

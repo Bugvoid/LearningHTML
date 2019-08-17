@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+    <script>
+        var num1, num2;
+        window.onload = function(){
+            document.getElementById("soma").onclick = calcsoma;
+            document.getElementById("sub").onclick = calcsub;
+            document.getElementById("mult").onclick = calcmult;
+            document.getElementById("div").onclick = calcdiv;
+        }
+        
+        function ler(){
+            num1 = parseFloat(document.getElementById("n1").value);
+            num2 = parseFloat(document.getElementById("n2").value);
+        }
+
+        function Result(res){
+            document.getElementById("result").value = res;
+            
+        }
+        
+        function calcsoma(){
+            ler();
+            Result(num1+num2);
+        }
+        function calcsub(){
+            ler();
+            Result(num1-num2);
+        }
+        function calcmult(){
+            ler();
+            Result(num1*num2);
+        }
+        function calcdiv(){
+            ler();
+            Result(num1/num2);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>CALCULADORA</h1>
+    <form >
+        Numero 1:<br>
+        <input type="text" id="n1"><br>
+        Numero 2:<br>
+        <input type="text" id="n2"><br>
+        
+        
+        <input type="button" value=" + " id="soma">
+        <input type="button" value=" - " id="sub">
+        <input type="button" value=" * " id="mult">
+        <input type="button" value=" / " id="div">
+        
+        <br><br>
+        Resultado: <input type="text" id="result" readonly>
+    </form>
+</body>
+</html>

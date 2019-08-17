@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Untitled Document</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'PressStart2P-Regular';
+            src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @-webkit-keyframes anima {
+            0% {
+                background-color: #000000;
+            }
+            50% {
+                background-color: #ffa700;
+            }
+            100% {
+                background-color: #0066cc;
+            }
+        }
+        
+        @-webkit-keyframes warner {
+            0% {
+                box-shadow: 10px 10px 20px #FC0;
+            }
+            50% {
+                box-shadow: 10px 10px 20px #00ffd8;
+            }
+            100% {
+                box-shadow: 10px 10px 20px #ff0000;
+            }
+        }
+        
+        body {
+            font-family: "PressStart2P-Regular";
+            background-color: black;
+            -webkit-animation: anima 5s linear 2s infinite alternate;
+        }
+        
+        #tudo {
+            margin: 0 auto;
+            width: 815px;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+        
+        #topo,
+        #base {
+            height: 155px;
+            width: 100%;
+            clear: both;
+            margin-left: 5px;
+        }
+        
+        #topo {
+            padding-top: 10px;
+        }
+        
+        #base {
+            padding-bottom: 10px;
+        }
+        
+        #meio {
+            width: 100%;
+            clear: both;
+            background-color: #900;
+        }
+        
+        #esquerda,
+        #direita {
+            width: 150px;
+            height: auto;
+            float: left;
+        }
+        
+        #esquerda {
+            margin-left: 5px;
+        }
+        
+        #centro {
+            width: 450px;
+            background-color: #FFF;
+            height: auto;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .imgH,
+        .imgV {
+            float: left;
+            padding: 5px;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+            margin: 5px;
+            box-shadow: 0px 0px 10px #000000;
+            border-radius: 10px;
+            background-color: white;
+        }
+        
+        .imgV {
+            margin-top: 25px;
+        }
+        
+        img {
+            border-radius: 10px;
+        }
+        
+        .coluna {
+            -webkit-column-count: 2;
+            -webkit-column-gap: normal;
+            -webkit-column-rule: 4px double green;
+            text-align: justify;
+        }
+        
+        h3 {
+            color: #639;
+            font-family: "PressStart2P-Regular";
+        }
+        
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+        }
+        
+        .foto {
+            -webkit-animation: warner 5s linear 2s infinite alternate;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="tudo">
+        <div id="topo">
+            <div class="imgH"><img src="images/carroslateral/car1.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car2.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car3.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car4.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car5.png" /></div>
+        </div>
+        <div id="meio">
+            <div id="esquerda">
+                <div class="imgV"><img src="images/carroslateral/car6.png" /></div>
+                <div class="imgV"><img src="images/carroslateral/car7.png" /></div>
+                <div class="imgV"><img src="images/carroslateral/car8.png" /></div>
+            </div>
+            <div id="centro">
+                <h3>CAMARO: MAIS QUE ESPORTIVO, UM ÍCONE DE ESPORTIVIDADE</h3>
+                <p>
+                    <img class="foto" height="230" src="images/carrao.jpg" width="300" /></p>
+                <div class="coluna">
+                    <p>É impossível passar desapercebido dirigindo um Camaro. A aparência forte e robusta da traseira e dianteira com design renovado produz uma percepção mais larga, baixa e contemporânea. São tantos detalhes que fica impossível perceber todos ao primeiro olhar, mas o conjunto final de design e performance do Camaro 2014 causa fortes emoções em qualquer um que atravesse o seu caminho.</p>
+                    <p>Motorista e passageiro serão acomodados no dual cockpit, que proporciona uma posição confortável em qualquer trajeto. O Camaro também oferece um sistema de entretenimento com tecnologia de ponta: o Chevrolet MyLink.</p>
+                    <p>O Camaro 2014 recebeu atualizações de design e tecnologia, mantendo o mesmo DNA esportivo que o tornou um ícone automobilístico.</p>
+                </div>
+            </div>
+            <div id="direita">
+                <div class="imgV"><img src="images/carroslateral/car9.png" /></div>
+                <div class="imgV"><img src="images/carroslateral/car10.png" /></div>
+                <div class="imgV"><img src="images/carroslateral/car11.png" /></div>
+            </div>
+        </div>
+        <div id="base">
+            <div class="imgH"><img src="images/carroslateral/car12.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car13.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car14.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car15.png" /></div>
+            <div class="imgH"><img src="images/carroslateral/car16.png" /></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<script>
+    window.onload=function(){
+        document.getElementById("btn").onclick = function(){
+            verificar();
+        }
+    } 
+    
+    function verificar(){
+        var num = parseInt(document.getElementById("txtn").value);
+        
+        if(num % 2 == 1){
+            alert("Esse numero é impar!");
+        }else
+            alert("Esse numero é par!");
+    }
+    </script>
+<body>
+    <form>
+        Numero: <input type="text" id="txtn">
+        <input type="button"  value="Verificar "id="btn">
+    </form>
+</body>
+</html>

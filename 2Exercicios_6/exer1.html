@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exercício 1</title>
+        <script>
+            window.onload = function(){
+                var obj1 = document.getElementById("botao1");
+	            var obj2 = document.getElementById("botao2");
+                
+                obj1.onclick=function(){
+                    letraMaiuscula();
+	           }
+                obj2.onclick=function(){
+                    separador();
+	           }
+            }
+                function letraMaiuscula(){
+                    var txt = document.getElementById("texto").value;
+                    txt = txt.toUpperCase();
+                    document.getElementById("text").innerHTML=txt;
+                }
+                function separador(){
+                    var p1=document.getElementById("texto").value;
+                    var quebra=p1.split("");
+                    var txt="";
+                    for(i=0;i<quebra.length;i++){
+                        txt += quebra[i]+"<br/>";
+                    }
+                    document.getElementById("text").innerHTML=txt;
+                }
+        </script>
+    </head>
+    <body>
+        <form name="form1" method="post" action="">
+            <input name="texto" type="text" id="texto" size="50"/><br/><br/>
+            <input type="button" value="Maiúscula" id="botao1"/>
+            <input type="button" value="Separar" id="botao2"/>
+        </form><br/>
+        <div id="text"></div>
+    </body>
+</html>

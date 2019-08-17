@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Calc</title>
+    <style>
+        body{
+            font-family:  verdana;
+            font-size: 18pt;
+        }
+        #principal{
+            margin: 0 auto;
+            width: 440px;
+            height: 350px;
+            border: double 22px red;
+            padding: 30px;
+            text-align: left;
+        }
+        .texto{
+            font-size: 18pt;
+            border: 1px solid #000;
+            background: #ffed15;
+        }
+        .op{
+            float: left;
+            width: 200px;
+            height: 150px;
+            text-align: left;
+            margin-top: 10px;
+            padding-right: 230px;
+            padding-bottom: 0px;
+        }
+        .oy{
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="principal">
+        <div class="oy">
+            
+        <strong>Valor 1:</strong><input class="texto" type="text" name="valor1">
+        <strong>Valor 2:</strong><input class="texto" type="text" name="valor2">
+        </div>
+        <div class="op">
+            <strong>Opções:</strong><br>
+            <input type="radio" name="op" id="som">Soma <br>
+            <input type="radio" name="op" id="sub">Subtração <br>
+            <input type="radio" name="op" id="mul">Multiplicação <br>
+            <input type="radio" name="op" id="div">Divição <br>
+        </div>
+        
+        <strong>Resultado:</strong>
+        <input class="texto" type="text" name="cal"><br>
+        <input type="button" value="calcular">
+    
+    
+    </form>
+</body>
+</html>

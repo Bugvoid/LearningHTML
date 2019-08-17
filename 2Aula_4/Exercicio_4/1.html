@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    
+    <script>
+        
+        
+        window.onload = function(){
+            document.getElementById("btn").onclick=function(){
+                calcular();
+            }
+        }
+        
+        function calcular(){
+            var total =parseFloat( document.getElementById("txtotal").value);
+            var par =parseInt( document.getElementById("par").value);
+            console.log(par);
+            console.log(total);
+            if(par == 1){
+                document.getElementById("res").value = total;
+            }else if(par == 2){
+                document.getElementById("res").value = total + ((total*3)/100);
+            }else if(par == 4){
+                document.getElementById("res").value = total + ((total*7)/100);
+            }else(
+                alert("Erro: Numero de parcela incorreta!")
+            )
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Valor: <input type="text" id="txtotal">
+        Parcela: <input type="text" id="par">
+        <input type="button" id="btn" value="Calcular"><br><br>
+        resultado <input type="text" id="res" readonly>
+    </form>
+</body>
+</html>

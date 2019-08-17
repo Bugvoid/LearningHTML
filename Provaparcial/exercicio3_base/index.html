@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+    @keyframes anima{
+        0%{
+            background: #000;
+        }
+        50%{
+            background: #f00;
+        }
+        100%{
+            background: #00f;
+        }
+    }
+    body{
+        background: #000;
+        -webkit-animation: anima 5s linear 2s infinite alternate;
+    }
+	
+    #tudo{
+        width: 815px;
+        background: #eee;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    #top,#base{
+        height: 155px;
+        width: 100%;
+        margin-left: 5px;
+        clear: both;
+    }
+    #topo{
+        padding-top: 10px;
+    }
+    #base{
+        padding-bottom: 10px;
+    }
+    #esquerda,#direita{
+        width: 150px;
+        height: auto;
+        float: left;
+        
+    }
+    #esquerda{
+        margin-left: 5px;
+    }
+    #centro{
+        float: left;
+        width: 450px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .imgH,imgV{
+        float: left;
+        padding: 5px;
+        width: 140px;
+        height: 140px;
+        margin: 5px;
+        box-shadow: 0 0 10px #000;
+        background: #eee;
+        border-radius: 10px;
+    }
+    img{
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="tudo">
+        <div id="topo">
+            <div class="imgH"><img src="images/carroslateral/car1.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car2.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car3.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car4.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car5.png"></div>
+        </div>
+        <div id="meio">
+            <div id="esquerda">
+                <div class="imgV"><img src="images/carroslateral/car6.png"></div>
+                <div class="imgV"><img src="images/carroslateral/car7.png"></div>
+                <div class="imgV"><img src="images/carroslateral/car8.png"></div>
+            </div>
+            <div id="centro"></div>
+            <div id="direita">
+                <div class="imgV"><img src="images/carroslateral/car9.png"></div>
+                <div class="imgV"><img src="images/carroslateral/car10.png"></div>
+                <div class="imgV"><img src="images/carroslateral/car11.png"></div>
+            </div>
+        </div>
+        <div id="base">
+            <div class="imgH"><img src="images/carroslateral/car12.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car13.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car14.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car15.png"></div>
+            <div class="imgH"><img src="images/carroslateral/car16.png"></div>
+        </div>
+    </div>
+</body>
+</html>

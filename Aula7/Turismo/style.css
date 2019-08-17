@@ -1,0 +1,60 @@
+p{
+            color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 17px;
+            
+        }
+#principal{
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
+}
+.caixa{
+    width: 310px;
+    height: 400px;
+    background: #ffffff;
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+}
+.descri{
+    text-align: justify;
+    padding: 5px;
+    color: #000;
+    word-wrap: break-word;
+}
+img{
+    width: 250px;
+    height: 150px;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+figcaption{
+    text-align: center;
+    font-size: 15pt;
+    font-family: vergana;
+}
+a{
+    padding: 5px;
+}
+
+hr{
+    border-radius: 20px;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+h2{
+    padding-left: 10px;
+}
+fieldset{
+    margin-top: 80px;
+    border: 0px solid #fff;
+    
+}

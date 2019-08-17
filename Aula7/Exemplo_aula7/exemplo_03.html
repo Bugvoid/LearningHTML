@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplos</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: #a20404;
+            color: #a20404;
+            border: 1px solid #00ffeb;
+            display:inline-block;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #main{
+            width: 250px;
+            margin: 0 auto;
+        }
+        div:hover{
+            background: #0076ff;
+            color: #0076ff;
+            transition: 1s;
+        }
+        div:active{
+            background:#00c927;
+            color:#00c927;
+        }
+        div:focus{
+            background: #000000;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <section id="main">
+        <div tabindex="1">Olá mundo!!!</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplos</title>
+    <style>
+        body{
+            font-family: verdana;
+            font-size: 10pt;
+        }
+        
+        table.cal{
+            color: #005464;
+            border: 3px solid #000;
+            border-radius: 0 0 25px 25px;
+            border-spacing: 0; 
+        }
+        .cal caption{
+            background: #eef0f2;
+            color: #0086f8;
+            border-radius: 25px 25px 0 0;
+            text-transform: uppercase;
+            
+        }
+        
+        .cal th, .cal td{
+            margin: 2px;
+            padding-bottom: 2px;
+        }
+        th{
+            text-align: center;
+            background: #eee;
+        }
+        .cal td{
+            width: 55px;
+            height: 55px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        tr:nth-child(odd){
+            background: #0080ff;
+        }
+        tr:nth-child(even){
+            background: #ffffff;
+        }
+        tr:last-child>td:first-child{
+            border-radius: 0 0 0 20px;
+        }
+        tr:last-child>td:last-child{
+            border-radius: 0 0 20px 0;
+        }
+        tr>td:first-child, tr>td:last-child{
+            color: #3b00ff;
+        }
+        td:nth-child(even){
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+        .feriado{
+            background: #d7f207;
+        }
+        .old{
+            background: #ccc;
+            color: #535353;
+        }
+        span{
+            text-align: center;
+            color: #f20c5c;
+            font-size: 7pt;
+            display: none;
+        }
+        td:hover>span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <table class="cal">
+        <caption>Abril 2016</caption>
+        <thead>
+            <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="old">27</td>
+                <td class="old">28</td>
+                <td class="old">29</td>
+                <td class="old">30</td>
+                <td class="old">31</td>
+                <td>1*<span>Dia da mentira</span></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14*<span>Prova parcial</span></td>
+                <td>15*<span>Prova parcial</span></td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td class="feriado">21<span>Feriado de Tiradentes</span></td>
+                <td>22*<span>Não haverá aula</span></td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

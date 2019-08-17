@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <script>
+        window.onload=function(){
+        document.getElementById("btn").onclick = function(){
+            verificar();
+        }
+    } 
+    
+    function verificar(){
+        var num = parseInt(document.getElementById("txtn").value);
+        var num2 = parseInt(document.getElementById("txtn2").value);
+        
+        if(num == num2){
+            alert("Esse numeros são iguais");
+        }else if(num > num2)
+            alert("O numero " + num + " é maior que o numero" + num2);
+        else if(num2 > num)
+            alert("O numero " + num2 + " é maior que o numero " + num);
+    }
+    </script>
+    
+</head>
+    
+<body>
+    <form>
+        Numero: <input type="text" id="txtn">
+        Numero2: <input type="text" id="txtn2">
+        <input type="button"  value="Verificar "id="btn">
+    </form>
+</body>
+</html>

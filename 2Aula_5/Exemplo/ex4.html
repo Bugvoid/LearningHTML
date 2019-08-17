@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">  
+    
+    <script>
+        var codigos = [];
+        var nomes = [];
+        var precos = [];
+        
+        var i=0;
+        
+    window.onload = function(){
+        document.getElementById("btncad").onclick=function(){
+            cadastrarproduto();
+        }
+        document.getElementById("btnpesq").onclick=function(){
+            pesquiproduto();
+        }
+        document.getElementById("btnlista").onclick=function(){
+            listaproduto();
+        }
+    }
+    function cadastrarproduto(){
+            codigos[i]=parseInt(document.getElementById("txtcod").value);
+            nomes[i]= document.getElementById("txtnome").value;
+            precos[i]= parseFloat(document.getElementById("txtpreco").value);
+            
+        
+        i++;
+    }
+    function pesquiproduto(){
+        var popo = document.getElementById("txtpesq").value;
+        var udo ="";
+        for(var cont=0; cont<nomes.length; cont++){
+            if(nomes[cont].indexOf(popo)>=0){
+                udo += codigos[cont]+"--"+nomes[cont] + "<br>";
+            }
+        }
+        
+    }
+    function listaproduto(){
+        var cont ="<table border='1'>";
+        for(var x =0;x<codigos.length; x++){
+            cont += "<tr>";
+            cont += "<td>" +codigos[x]+"</td>";
+            cont += "<td>" +nomes[x]+"</td>";
+            cont += "<td>" +precos[x]+"</td>";
+            cont += "</tr>";
+        }
+        cont+= "</table>";
+        document.getElementById("txtrelatorio").innerHTML = cont;
+    }
+    </script>
+</head>
+
+<body>
+    <form>
+        Código: <input type="text" id="txtcod"><br> 
+        Nome: <input type="text" id="txtnome"><br> 
+        Preço: <input type="text" id="txtpreco"><br>
+        <input type="button" value="Cadastrar" id="btncad"><br><br> 
+        Pesquisa: <input type="text" id="txtpesq">
+        <input type="button" value="Pesquisar" id="btnpesq"><br>
+        <input type="button" value="Listar Todos" id="btnlista">
+    </form>
+    <div id="txtrelatorio"></div>
+</body>
+
+</html>
